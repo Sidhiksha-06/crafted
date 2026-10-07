@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Crafted</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="auth-body">
+
+<header class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            <span class="logo-mark">C</span>
+            <span>CRAFTED</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="artisans.html">Artisans</a>
+            <a href="about.html">Our Story</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="sell.html" class="sell-nav">Sell Your Craft</a>
+            <a href="cart.html" class="cart-link">
+                <span>Bag</span>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="artisans.html">Artisans</a>
+        <a href="about.html">Our Story</a>
+        <a href="sell.html">Sell Your Craft</a>
+        <a href="login.html">Login</a>
+        <a href="cart.html">Bag</a>
+    </div>
+</header>
+
+<main class="auth-main">
+
+    <div class="auth-container">
+
+        <div class="auth-visual">
+            <div class="auth-visual-content">
+                <p class="eyebrow light">WELCOME TO CRAFTED</p>
+                <h1>One account.<br><em>Two possibilities.</em></h1>
+                <p>
+                    Discover beautiful handmade creations or share something
+                    you made yourself. On Crafted, you can do both.
+                </p>
+            </div>
+        </div>
+
+        <div class="auth-form-area">
+
+            <div class="auth-form-wrapper">
+
+                <div class="auth-heading">
+                    <p class="eyebrow">YOUR CRAFTED ACCOUNT</p>
+                    <h2>Welcome back.</h2>
+                    <p>Sign in to continue exploring and creating.</p>
+                </div>
+
+                <div class="auth-tabs">
+                    <button class="auth-tab active" data-auth="login">Sign In</button>
+                    <button class="auth-tab" data-auth="signup">Create Account</button>
+                </div>
+
+                <form class="auth-form" id="loginForm">
+
+                    <div class="form-group">
+                        <label for="loginEmail">Email address</label>
+                        <input type="email" id="loginEmail" placeholder="you@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label class="checkbox-label">
+                            <input type="checkbox">
+                            <span>Remember me</span>
+                        </label>
+
+                        <a href="#">Forgot password?</a>
+                    </div>
+
+                    <button type="submit" class="btn btn-dark full-btn">Sign in <span>→</span></button>
+
+                </form>
+
+                <form class="auth-form hidden-form" id="signupForm">
+
+                    <div class="form-group">
+                        <label for="signupName">Full name</label>
+                        <input type="text" id="signupName" placeholder="Your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signupEmail">Email address</label>
+                        <input type="email" id="signupEmail" placeholder="you@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="signupPassword">Create password</label>
+                        <input type="password" id="signupPassword" placeholder="Create a password" required>
+                    </div>
+
+                    <label class="checkbox-label terms-label">
+                        <input type="checkbox" required>
+                        <span>I agree to the Crafted terms and privacy policy.</span>
+                    </label>
+
+                    <button type="submit" class="btn btn-dark full-btn">Create account <span>→</span></button>
+
+                </form>
+
+                <div class="auth-note">
+                    <span>✦</span>
+                    One account can be used to buy and sell on Crafted.
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

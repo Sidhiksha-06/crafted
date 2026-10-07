@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore handmade crafts from independent artisans on Crafted.">
+    <title>Explore Crafts | Crafted</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            <span class="logo-mark">C</span>
+            <span>CRAFTED</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="explore.html" class="active">Explore</a>
+            <a href="artisans.html">Artisans</a>
+            <a href="about.html">Our Story</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="sell.html" class="sell-nav">Sell Your Craft</a>
+            <a href="login.html" class="icon-link">♡</a>
+            <a href="cart.html" class="cart-link">
+                <span>Bag</span>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="artisans.html">Artisans</a>
+        <a href="about.html">Our Story</a>
+        <a href="sell.html">Sell Your Craft</a>
+        <a href="login.html">Login</a>
+        <a href="cart.html">Bag</a>
+    </div>
+</header>
+
+<main>
+
+    <section class="page-hero">
+        <div class="container">
+            <p class="eyebrow">THE COLLECTION</p>
+            <h1>Made slowly.<br><em>Found meaningfully.</em></h1>
+            <p>
+                Explore handmade creations from independent artisans across
+                different craft traditions.
+            </p>
+        </div>
+    </section>
+
+    <section class="explore-section section">
+        <div class="container">
+
+            <div class="explore-toolbar">
+
+                <div class="search-box">
+                    <span>⌕</span>
+                    <input type="text" id="productSearch" placeholder="Search crafts, products or artisans...">
+                </div>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="All">All</button>
+                    <button class="filter-btn" data-filter="Pottery">Pottery</button>
+                    <button class="filter-btn" data-filter="Textiles">Textiles</button>
+                    <button class="filter-btn" data-filter="Jewellery">Jewellery</button>
+                    <button class="filter-btn" data-filter="Woodcraft">Woodcraft</button>
+                    <button class="filter-btn" data-filter="Art">Art</button>
+                </div>
+
+                <select id="sortProducts" class="sort-select">
+                    <option value="default">Sort by</option>
+                    <option value="low">Price: Low to High</option>
+                    <option value="high">Price: High to Low</option>
+                    <option value="name">Name: A to Z</option>
+                </select>
+
+            </div>
+
+            <div class="results-info">
+                <span id="resultCount">8 creations</span>
+                <span>Handmade with intention</span>
+            </div>
+
+            <div class="product-grid explore-grid" id="productGrid">
+
+                <article class="product-card explore-product" data-category="Pottery" data-name="Earthline Terracotta Vase" data-price="850">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=800&q=85" alt="Earthline Terracotta Vase">
+                        <button class="wishlist-btn" data-product="Earthline Terracotta Vase">♡</button>
+                        <span class="product-tag">Bestseller</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Pottery</p>
+                        <h3>Earthline Terracotta Vase</h3>
+                        <p class="maker">by Meena's Studio</p>
+                        <div class="product-bottom">
+                            <strong>₹850</strong>
+                            <button class="add-cart" data-product="Earthline Terracotta Vase" data-price="850">Add to bag</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card explore-product" data-category="Textiles" data-name="Handwoven Indigo Stole" data-price="1450">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1590736969955-71cc94901144?auto=format&fit=crop&w=800&q=85" alt="Handwoven Indigo Stole">
+                        <button class="wishlist-btn" data-product="Handwoven Indigo Stole">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Textiles</p>
+                        <h3>Handwoven Indigo Stole</h3>
+                        <p class="maker">by Aara Weaves</p>
+                        <div class="product-bottom">
+                            <strong>₹1,450</strong>
+                            <button class="add-cart" data-product="Handwoven Indigo Stole" data-price="1450">Add to bag</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card explore-product" data-category="Jewellery" data-name="Sunstone Handmade Earrings" data-price="680">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=800&q=85" alt="Sunstone Handmade Earrings">
+                        <button class="wishlist-btn" data-product="Sunstone Handmade Earrings">♡</button>
+                        <span class="product-tag">New</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Jewellery</p>
+                        <h3>Sunstone Handmade Earrings</h3>
+                        <p class="maker">by Aruna Crafts</p>
+                        <div class="product-bottom">
+                            <strong>₹680</strong>
+                            <button class="add-cart" data-product="Sunstone Handmade Earrings" data-price="680">Add to bag</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card explore-product" data-category="Woodcraft" data-name="Carved Wooden Tray" data-price="1100">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1602874801006-e26d9f5b0e1a?auto=format&fit=crop&w=800&q=85" alt="Carved Wooden Tray">
+                        <button class="wishlist-btn" data-product="Carved Wooden Tray">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Woodcraft</p>
+                        <h3>Carved Wooden Tray</h3>
+                        <p class="maker">by Kannan Woodworks</p>
+                        <div class="product-bottom">
+                            <strong>₹1,100</strong>
+                            <button class="add-cart" data-product="Carved Wooden Tray" data-price="1100">Add to bag</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card explore-product" data-category="Art" data-name="Earth Rhythm Canvas" data-price="1750">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1577083552431-6e5fd01988a5?auto=format&fit=crop&w=800&q=85" alt="Earth Rhythm Canvas">
+                        <button class="wishlist-btn" data-product="Earth Rhythm Canvas">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Art</p>
+                        <h3>Earth Rhythm Canvas</h3>
+                        <p class="maker">by Kavya Art Studio</p>
+                        <div class="product-bottom">
+                            <strong>₹1,750</strong>
+                            <button class="add-cart" data-product="Earth Rhythm Canvas" data-price="1750">Add to bag</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card explore-product" data-category="Pottery" data-name="Handpainted Ceramic Bowl" data-price="620">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1603199506016-b9a594b593c0?auto=format&fit=crop&w=800&q=85" alt="Handpainted Ceramic Bowl">
+                        <button class="wishlist-btn" data-product="Handpainted Ceramic Bowl">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Pottery</p>
+                        <h3>Handpainted Ceramic Bowl</h3>
+                        <p class="maker">by Nila Ceramics</p>
+                        <div class="product-bottom">
+                            <strong>₹620</strong>
+                            <button class="add-cart" data-product="Handpainted Ceramic Bowl" data-price="620">Add to bag</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card explore-product" data-category="Textiles" data-name="Natural Cotton Table Runner" data-price="980">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=800&q=85" alt="Natural Cotton Table Runner">
+                        <button class="wishlist-btn" data-product="Natural Cotton Table Runner">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Textiles</p>
+                        <h3>Natural Cotton Table Runner</h3>
+                        <p class="maker">by Loom & Earth</p>
+                        <div class="product-bottom">
+                            <strong>₹980</strong>
+                            <button class="add-cart" data-product="Natural Cotton Table Runner" data-price="980">Add to bag</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card explore-product" data-category="Jewellery" data-name="Handcrafted Brass Pendant" data-price="890">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=800&q=85" alt="Handcrafted Brass Pendant">
+                        <button class="wishlist-btn" data-product="Handcrafted Brass Pendant">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Jewellery</p>
+                        <h3>Handcrafted Brass Pendant</h3>
+                        <p class="maker">by Dhara Metalworks</p>
+                        <div class="product-bottom">
+                            <strong>₹890</strong>
+                            <button class="add-cart" data-product="Handcrafted Brass Pendant" data-price="890">Add to bag</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="empty-results" id="emptyResults">
+                <div>⌕</div>
+                <h3>No creations found</h3>
+                <p>Try another search or choose a different category.</p>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="logo footer-logo">
+                    <span class="logo-mark">C</span>
+                    <span>CRAFTED</span>
+                </a>
+                <p>A place for handmade things,<br>independent makers and meaningful stories.</p>
+            </div>
+
+            <div class="footer-links">
+                <div>
+                    <h4>Discover</h4>
+                    <a href="explore.html">Explore Crafts</a>
+                    <a href="artisans.html">Artisans</a>
+                    <a href="about.html">Our Story</a>
+                </div>
+                <div>
+                    <h4>Sell</h4>
+                    <a href="sell.html">Sell on Crafted</a>
+                    <a href="login.html">Create Account</a>
+                    <a href="login.html">Seller Login</a>
+                </div>
+                <div>
+                    <h4>Help</h4>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Shipping</a>
+                    <a href="#">Returns</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 Crafted. Made with intention.</span>
+            <span>Handmade • Human • Authentic</span>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
